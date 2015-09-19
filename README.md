@@ -42,9 +42,9 @@ Comme navigateur soit :
  * [Firefox](https://www.mozilla.org/fr/firefox/new/) et l'[extension Firebug](https://getfirebug.com/downloads/)
  * [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 
- Pour vérifier que tout est correctement installé, ouvrez une invite de commande (sur windows : `Windows+R`, tapez "cmd" puis le bouton "OK")
+Pour vérifier que tout est correctement installé, ouvrez une invite de commande (sur windows : `Windows+R`, tapez "cmd" puis le bouton "OK")
 
- et tapez :
+et tapez :
 
      git --version
      # Ceci doit répondre git version 2.5.3 (ou similaire)
