@@ -2,10 +2,10 @@
 
 ## Prérequis
 
-Avant tout, vérifier que vous avez bien installé [les prérequis nécessaires pour toutes les
+Avant tout, vérifiez que vous avez bien installé [les prérequis nécessaires pour toutes les
 leçons](../readme.md#prerequis).
 
-Ensuite ouvrez votre invite de commande, et tapez
+Ensuite ouvrez votre invite de commande, et tapez :
 
     npm install javascripting --global
 

@@ -8,10 +8,10 @@ Si vous avez des questions concernant un cours à venir, un problème d'installa
 ou le module en général, n'hésitez pas à créer une issue (dans "Issues", puis "New Issue"), il faut
 d'abord avoir créé son compte Github.
 
-Si vous voyez une erreur dans le cours, ou pensez qu'un point en particulier manque de détail, vous pouvez créer
+Si vous voyez une erreur dans le cours, ou pensez qu'un point en particulier manque de détails, vous pouvez créer
 une pull request.
 
-Tous les supports de cours (slides, ...) vous seront mis à disposition dans ce projet.
+Tous les supports de cours (slides, ...) seront mis à votre disposition dans ce projet.
 
 ## Objectifs
 
@@ -30,10 +30,9 @@ Les objectifs du cours sont :
 
 Voici les installations à faire avant le premier cours du 2 Octobre :
 
- * Système d'exploitation Linux, Windows, ou Mac OS
  * [Git](http://git-scm.com/download/win) (v2.5 minimum)
  * [SourceTree](https://www.sourcetreeapp.com/) sur windows ou mac , ou [SmartGit](http://www.syntevo.com/smartgit/) sur linux
- * [NodeJS](https://nodejs.org/en/download/) npm : Version 4
+ * [NodeJS](https://nodejs.org/en/download/) et npm : Version 4
  * [Sublime text 3](http://www.sublimetext.com/3) (fortement conseillé), sauf si vous êtes déjà très à l'aise avec un autre éditeur
  * [Package Control](https://packagecontrol.io/installation) pour Sublime text 3
 
@@ -46,14 +45,14 @@ Pour vérifier que tout est correctement installé, ouvrez une invite de command
 
 et tapez :
 
-     git --version
-     # Ceci doit répondre git version 2.5.3 (ou similaire)
+    git --version
+    # Ceci doit répondre git version 2.5.3 (ou similaire)
 
-     node --version
-     # Ceci doit répondre v4.1.0 (ou similaire)
+    node --version
+    # Ceci doit répondre v4.1.0 (ou similaire)
 
-     npm --version
-     # Ceci doit répondre 2.14.3 (ou similaire)
+    npm --version
+    # Ceci doit répondre 2.14.3 (ou similaire)
 
 
 ## Leçons
