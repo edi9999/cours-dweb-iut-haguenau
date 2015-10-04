@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<style>
+			.counties {
+				fill: none;
+			}
+
+			.states {
+				fill:
+				none;
+				stroke:
+				#fff;
+				stroke-linejoin:
+				round;
+			}
+
+			.q0-9 {
+				fill:rgb(247,251,255);
+			}
+			.q1-9 {
+				fill:rgb(222,235,247);
+			}
+			.q2-9 {
+				fill:rgb(198,219,239);
+			}
+			.q3-9 {
+				fill:rgb(158,202,225);
+			}
+			.q4-9 {
+				fill:rgb(107,174,214);
+			}
+			.q5-9 {
+				fill:rgb(66,146,198);
+			}
+			.q6-9 {
+				fill:rgb(33,113,181);
+			}
+			.q7-9 {
+				fill:rgb(8,81,156);
+			}
+			.q8-9 {
+				fill:rgb(8,48,107);
+			}
+		</style>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+            var execCode = function(event){
+                var toEval = ($(event.target.parentElement.querySelectorAll('code')).text())
+                eval(toEval);
+            }
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-markdown>
+					<script type="text/template">
+						# Introduction à Javascript
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Objectifs Matière
+
+						* Programmer en Javascript client et NodeJS
+						* Savoir utiliser git
+						* Savoir manipuler le DOM
+						* Programmer en Angular (et React en facultatif)
+						* Programmer une API basique avec la librairie express
+						* Utiliser les APIs graphiques : canvas, svg, avec d3
+						* Utiliser des API externes : Google, Facebook
+						* Savoir créer une webapp
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Objectif séance
+
+						* Avoir un poste de développement fonctionnel
+						* Écrire vos premières lignes de Javascript
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## JS, Qu'est ce que c'est ?
+
+						* Un langage de script open (comme PHP, Python)
+						* Un langage normé (ES1:1997, ES3:1999, ES5:2009, et ES6:Juin 2015)
+						* Le code est interprété
+						* Le code tourne sur
+						  * le navigateur
+						  * un serveur (Node.JS)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## À quoi ça sert (coté client) ?
+
+						* Interactivité avec la page : effets visuels, ...
+						* Rechargement partiel de la page
+						* Exemples : Facebook, twitter, une immense majorité des sites internets.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## À quoi ça sert (coté serveur) ?
+
+						* Applications client/serveur utilisant le même langage
+						* Programmation événementielle : API
+						* Exemples : Netflix, Uber, Paypal, Linkedin, Walmart, NYTimes, beaucoup de startups,
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Historique
+
+						<img width="500px" src="img/The-History-of-Javascript-Web-UI.jpg" alt=""> <br>
+						Source : http://www.modernwebui.org/2015/03/15/the-history-of-javascript-web-ui/
+					</script>
+				</section>
+
+				<section>
+					<h2>Hello world</h2>
+                    <button onclick="execCode(event)">Eval</button>
+					<pre><code data-trim contenteditable>alert("Hello world");
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Variables, fonctions</h2>
+                    <button onclick="execCode(event)">Eval</button>
+					<pre><code data-trim contenteditable>function validerAge(age) {
+	if (age >= 18) {
+		alert("Vous êtes majeur");
+	}
+	else {
+		alert("Vous êtes mineur");
+	}
+}
+
+var age = prompt("Quel est votre âge ?")
+validerAge(age);
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Angular JS</h2>
+					<pre><code><div ng&#x2d;app>
+<label>Name:</label>
+<input
+	type="text"
+	ng-model="yourName"
+>
+<hr>
+<h4>Hello {{yourName}}!</h4>
+</div>
+					</code></pre>
+
+					<div ng-app>
+					<label>Name:</label>
+					<input type="text" ng-model="yourName" placeholder="Enter a name here">
+					<hr>
+					<h4>Hello {{yourName}}!</h4>
+					</div>
+				</section>
+
+				<section>
+					<h2>Exemple dataviz</h2>
+                    <button onclick="execCode(event)">Eval</button>
+					<div id="svgdemo">
+					<pre id="mycode"><code data-trim contenteditable>var link = document.getElementById('mycode');
+link.style.display = 'none';
+var width = 960,
+  height = 600;
+
+var rateById = d3.map();
+
+var quantize = d3.scale.quantize()
+  .domain([0, .15])
+  .range(
+    d3.range(9).map(function(i) {
+      return "q" + i + "-9";
+    })
+  );
+
+var projection = d3.geo.albersUsa()
+  .scale(900)
+  .translate([width / 2, height / 2]);
+
+var path = d3.geo.path()
+  .projection(projection);
+
+var svg = d3.select("#svgdemo").append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+queue()
+  .defer(d3.json, "us.json")
+  .defer(d3.tsv, "unemployment.tsv", function(d) {
+    rateById.set(d.id, +d.rate);
+  })
+  .await(ready);
+
+function ready(error, us) {
+  if (error) throw error;
+
+  svg.append("g")
+    .attr("class", "counties")
+    .selectAll("path")
+    .data(topojson.feature(us, us.objects.counties).features)
+    .enter().append("path")
+    .attr("class", function(d) { return quantize(rateById.get(d.id)); })
+    .attr("d", path);
+
+  svg
+    .append("path")
+    .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+    .attr("class", "states")
+    .attr("d", path);
+}
+
+d3.select("#svgdemo").style("height", height + "px");
+					</code></pre>
+				</div>
+			</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## TP
+
+						* [Préparer son environnement de développement](https://github.com/edi9999/cours-dweb-iut-haguenau#pr%C3%A9requis)
+						* Lancer `javascripting` en ligne de commande
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Ressources
+
+						* [Référence JS de Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+						* [(Livre) Javascript, the good parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1443865376&sr=1-1&keywords=javascript+the+good+parts+2015)
+					</script>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+
+		<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+		</script>
+
+	</body>
+</html>

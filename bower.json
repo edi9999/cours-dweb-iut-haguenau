@@ -1,0 +1,16 @@
+{
+  "name": "iut-cours",
+  "version": "0.0.0",
+  "homepage": "https://github.com/edi9999/cours-dweb-iut-haguenau",
+  "authors": [
+    "Edgar HIPP <hipp.edg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -24,10 +24,15 @@ Vérifiez que le workshop est bien installé en tapant `javascripting`.
 
     javascripting
 
-puis suivez les différentes étapes du tutoriel
+puis suivez les différentes étapes du TP
 
 ## Compte Rendu
 
 
 
 ## Aller plus loin
+
+Si vous finissez le TP avant la fin, vous pouvez commencer le TP sur node,
+
+    npm install -g learnyounode
+    learnyounode
