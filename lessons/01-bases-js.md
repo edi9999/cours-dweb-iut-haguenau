@@ -20,6 +20,8 @@ Vérifiez que le workshop est bien installé en tapant `javascripting`.
  * TP suivi (2h40m)
  * Retours sur le premier cours (20m)
 
+[Lien présentation](http://edi9999.github.io/cours-dweb-iut-haguenau/presentations/01-javascript.html#/)
+
 ## TP
 
     javascripting
