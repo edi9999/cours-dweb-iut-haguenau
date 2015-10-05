@@ -32,7 +32,7 @@ Voici les installations à faire avant le premier cours du 5 Octobre :
 
  * [Git](http://git-scm.com/download/win) (v2.5 minimum)
  * [SourceTree](https://www.sourcetreeapp.com/) sur windows ou mac , ou [SmartGit](http://www.syntevo.com/smartgit/) sur linux
- * [NodeJS](https://nodejs.org/en/download/) et npm : Version 4
+ * [NodeJS](https://nodejs.org/en/download/) et npm : Version 4 pour NodeJS, version 2 pour npm
  * [Sublime text 3](http://www.sublimetext.com/3) (fortement conseillé), sauf si vous êtes déjà très à l'aise avec un autre éditeur
  * [Package Control](https://packagecontrol.io/installation) pour Sublime text 3
 
