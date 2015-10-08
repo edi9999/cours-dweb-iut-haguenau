@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<style>
+			.counties {
+				fill: none;
+			}
+
+			.states {
+				fill:
+				none;
+				stroke:
+				#fff;
+				stroke-linejoin:
+				round;
+			}
+
+			.q0-9 {
+				fill:rgb(247,251,255);
+			}
+			.q1-9 {
+				fill:rgb(222,235,247);
+			}
+			.q2-9 {
+				fill:rgb(198,219,239);
+			}
+			.q3-9 {
+				fill:rgb(158,202,225);
+			}
+			.q4-9 {
+				fill:rgb(107,174,214);
+			}
+			.q5-9 {
+				fill:rgb(66,146,198);
+			}
+			.q6-9 {
+				fill:rgb(33,113,181);
+			}
+			.q7-9 {
+				fill:rgb(8,81,156);
+			}
+			.q8-9 {
+				fill:rgb(8,48,107);
+			}
+		</style>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+            var execCode = function(event){
+                var toEval = ($(event.target.parentElement.querySelectorAll('code')).text())
+                eval(toEval);
+            }
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-markdown>
+					<script type="text/template">
+						# Introduction à git (et npm)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Objectifs séance
+
+						* Connaitre l'utilité de git
+						* Savoir utiliser les commandes de bases
+						* Connaitre les concepts de gits
+						* Avoir essayé les commandes avancées de git (`bisect` , `rebase` , `rebase --interactive`)
+						* Connaitre les commandes de base de `npm`
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## GIT, Qu'est ce que c'est ?
+
+						* Un logiciel qui permet de gérer du code source
+						* Créé par Linus Torvalds en 2005 (Première version fonctionnelle en un week-end)
+						* Utilisé par quasiment toutes les entreprises
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Limites d'autres systèmes
+
+						1. John travaille seul sur son projet de site web. Il a essayé de corriger un bug pendant 1h, mais vient de remarquer que tout
+						ce qu'il a fait est inutile. Il veut donc retourner à l'ancienne version de son code.
+
+						**Résultat** : John doit manuellement annuler ses modifications
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						## Limites d'autres systèmes
+
+						On utilise Dropbox pour partager ces fichiers.
+
+						1. John découvre un bug, il modifie le fichier `user.js`.
+						2. Mary ajoute la fonctionnalité de login par google, elle aussi modifie le fichier `user.js`, .
+
+						**Résultat** : Quand John sauvegarde le fichier, celui de Mary est écrasé !
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Limites d'autres systèmes
+
+						On utilise le mail pour partager ces fichiers. A la fin de chaque journée, on envoie uniquement les fichiers que
+						l'on a changé.
+
+						1. John découvre un bug, il modifie le fichier `user.js`.
+						2. Mary ajoute la fonctionnalité de login par google, elle aussi modifie le fichier `user.js`, .
+
+						**Résultat** : Il faut choisir entre les deux fichiers, mais ce n'est pas possible !				</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Limites d'autres systèmes
+
+						Scénario ou une équipe de 1000 personnes travaille sur un même projet. Comment on s'organise ?
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Solution idéale:
+
+						* Il faut avoir un moyen de partager uniquement ce que l'on a changé.
+						* Il faut pouvoir travailler sans nécessairement avoir une connexion internet (Ça arrive)
+						* Il ne doit pas être possible de perdre des fichiers
+						* Il doit être possible de travailler pendant plusieurs semaines sur une fonctionnalité et de la mettre en production
+						seulement quand on le souhaite.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## GIT
+
+						> Git is a **free and open source** **distributed** version control system designed to handle everything from small to very large projects with **speed and efficiency**.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## GIT
+
+						> Git is **easy to learn** and has a **tiny footprint** with lightning fast performance.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Live demo
+
+						http://pcottle.github.io/learnGitBranching/?NODEMO
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Ressources
+
+						* [Référence GIT](https://git-scm.com/doc)
+						* Sur linux : `man git`
+						* Pour un sujet en particulier : git help `subject` , par exemple `git help commit`
+					</script>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+
+		<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+		</script>
+
+	</body>
+</html>
