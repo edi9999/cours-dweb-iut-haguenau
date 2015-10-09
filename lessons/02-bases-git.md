@@ -12,7 +12,7 @@ Présentation [https://edi9999.github.io/cours-dweb-iut-haguenau/presentations/0
 
     git clone https://github.com/edi9999/git-it.git
     cd git-it
-    npm install --global .
+    npm install --global . # Use sudo if necessary
     git-it
 
 ## TP npm
