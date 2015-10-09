@@ -1,5 +1,7 @@
 # Cours de l'IUT de Haguenau
 
+Pour avoir les liens rapidemment : https://iut-haguenau-dweb.slack.com/messages
+
 Cette page est faite pour les étudiants de l'IUT de Haguenau.
 Pour commencer, [créez vous un compte sur github](https://github.com/join) (c'est entièrement gratuit pour des projets publics, comme
 celui-ci).
