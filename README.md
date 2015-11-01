@@ -61,10 +61,10 @@ et tapez :
 
  1. [Introduction, Bases de Javascript](lessons/01-bases-js.md)
  2. [Découverte de GIT](lessons/02-bases-git.md)
- 3. Bases d'Angular
- 4. Angular avancé
+ 3. Bases de ReactJS (1/2)
+ 4. Bases de ReactJS (2/2)
  5. NodeJS et ES6 https://github.com/workshopper/learnyounode et https://github.com/yosuke-furukawa/tower-of-babel
- 6. express.js
+ 6. ReactJS + ES6
  7. Création de graphiques avec canvas + d3
  8. Tests unitaires https://github.com/finnp/test-anything
  9. React.js https://github.com/tako-black/learnyoureact
