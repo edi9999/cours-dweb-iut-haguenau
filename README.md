@@ -63,15 +63,20 @@ et tapez :
  2. [Découverte de GIT](lessons/02-bases-git.md)
  3. Bases de ReactJS (1/2)
  4. Bases de ReactJS (2/2)
- 5. NodeJS et ES6 https://github.com/workshopper/learnyounode et https://github.com/yosuke-furukawa/tower-of-babel
- 6. ReactJS + ES6
- 7. Création de graphiques avec canvas + d3
- 8. Tests unitaires https://github.com/finnp/test-anything
- 9. React.js https://github.com/tako-black/learnyoureact
+ 5. Bases de ReactJS (2/2)
+
+React JS : Séance du 13 Novembre :
+
+React Together : https://github.com/edi9999/react-together
+Fork des démos faites : https://github.com/edi9999/react-demos
+
+ 6. ReactJS + Ajax
+ 7. ReactJS + ES6
+ 8. React.js https://github.com/tako-black/learnyoureact
+ 9. Tests unitaires https://github.com/finnp/test-anything
  10. Création d'une webapp (Stockage de données)
  11. Création d'une webapp
  12. Création d'une webapp
  13. Création d'une webapp
  14. Création d'une webapp
  15. Création d'une webapp
-
