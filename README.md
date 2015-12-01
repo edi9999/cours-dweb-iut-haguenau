@@ -61,9 +61,8 @@ et tapez :
 
  1. [Introduction, Bases de Javascript](lessons/01-bases-js.md)
  2. [Découverte de GIT](lessons/02-bases-git.md)
- 3. [Bases de ReactJS (1/2)](lessons/03-bases-react.md)
- 4. Bases de ReactJS (2/2)
- 5. Bases de ReactJS (2/2)
+ 3. [Bases de ReactJS](lessons/03-bases-react.md)
+ 4. [Projets React + express](lessons/projets-react.md)
 
 React JS : Séance du 13 Novembre :
 
