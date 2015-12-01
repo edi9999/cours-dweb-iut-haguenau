@@ -3,6 +3,8 @@
 **Je souhaite que tout le code que vous soumettez soit votre propre création, si ce n'est pas le cas,
 il est obligatoire de le spécifier explicitement en incluant les liens vers les parties reprises en haut de chacun des fichiers repris.**
 
+Ces projets compteront avec un coefficient 2/3 pour la note finale.
+
 Voici une liste des projets react.js que je vous propose
 
 ### Application de messagerie instantanée à la messenger.com
@@ -38,8 +40,9 @@ Il faut pouvoir :
   * Jeu sur deux ordinateurs différents (avec un serveur)
   * Intelligence artificielle
 
-## Vote pour une image parmi deux, jusqu'a trouver la meilleure (Entrainement)
+## Image Voting (Entrainement) :
 
+Vote pour une image parmi deux, jusqu'a trouver la meilleure.
 Le logiciel est initialisé avec plusieurs images (coté serveur).
 On affiche à chacun des clients web deux images prises aléatoirement.
 L'utilisateur clique sur celle qu'il préfère, ce qui met à jour le score des deux images.
