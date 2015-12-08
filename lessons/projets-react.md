@@ -5,6 +5,9 @@ il est obligatoire de le spécifier explicitement en incluant les liens vers les
 
 Voici une liste des projets react.js que je vous propose
 
+###Projets :
+Joel Mercier (@Joel-Mercier) & François Mang (@Franz9425) : Application de messagerie instantanée à la messenger.com - Discussion en temps réel avec une autre personne avec gestion des notifications lors d'un nouveau message - Discussions de groupe - - Historique des messages - Eventuellement portage sur React Native
+
 ## Lecteur de GIST (Entrainement)
 
 Le but de ce petit projet est d'afficher le dernier GIST pour un utilisateur donné : Par exemple, voici la liste des gist de l'utilisateur TJ : https://gist.github.com/tj
