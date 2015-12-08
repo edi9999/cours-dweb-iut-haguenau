@@ -98,6 +98,17 @@ Il faut également avoir une vue qui permette d'afficher toutes les images class
  * Niveaux de jeux
  * Version natives iPhone et Android avec ReactNative
 
+
+## Memory
+Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
+
+ * Affichage du jeu
+ * Moteur du jeu
+ * Score / Highscore, partage facebook et twitter
+ * Niveaux de jeux
+ * Sauvegarde
+ * Version natives iPhone et Android avec ReactNative
+
 ## Checklist pour proposer votre propre projet :
 
  * Doit avoir une UI HTML écrite en React conséquente. L'UI doit être dynamique
