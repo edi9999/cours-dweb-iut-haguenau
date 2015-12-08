@@ -5,8 +5,17 @@ il est obligatoire de le spécifier explicitement en incluant les liens vers les
 
 Voici une liste des projets react.js que je vous propose
 
-###Projets :
-Joel Mercier (@Joel-Mercier) & François Mang (@Franz9425) : Application de messagerie instantanée à la messenger.com - Discussion en temps réel avec une autre personne avec gestion des notifications lors d'un nouveau message - Discussions de groupe - - Historique des messages - Eventuellement portage sur React Native
+### Application de messagerie instantanée à la messenger.com
+
+Joel Mercier (@Joel-Mercier) & François Mang (@Franz9425) : 
+
+ - Discussion en temps réel avec une autre personne avec gestion des notifications lors d'un nouveau message 
+ - Discussions de groupe
+ - Historique des messages 
+ - Eventuellement portage sur React Native
+ - Envoi de texte formaté en markdown
+ - Travailler sur une intégration avec d'autres outils (par exemple, avec github, pour avoir une notification quand quelqu'un fait un commit (ou une autre intégration))
+
 
 ## Lecteur de GIST (Entrainement)
 
