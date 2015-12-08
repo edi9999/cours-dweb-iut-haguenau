@@ -78,6 +78,8 @@ Il faut également avoir une vue qui permette d'afficher toutes les images class
 
 ## Conway's Game of Life
 
+Quentin Kerguélen (@qkerguelen) et Hugo Beyer (@HugoBeyer67)
+
 <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Lien explication game of life</a>
 
  * Affichage du jeu
