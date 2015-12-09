@@ -119,4 +119,6 @@ Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
  * Doit avoir un serveur écrit en Node.JS, avec express
  * Déployable avec un simple `git push` (en utilisant heroku)
  * Le projet doit être suffisamment complexe
+ 
+Canac Tom : Projet d'analyse de code HTML dans le but de faire des audits SEO. Cf les dépots auxquels je vous ai invité.
 
