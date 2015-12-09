@@ -110,6 +110,8 @@ Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
  * Niveaux de jeux
  * Sauvegarde
  * Version natives iPhone et Android avec ReactNative
+ * Mode multijoueur sur deux ordinateurs avec un serveur
+ * Le mode multijoueur doit pouvoir marcher avec autant de joueurs que l'on souhaite
 
 ## Checklist pour proposer votre propre projet :
 
