@@ -119,4 +119,15 @@ Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
  * Doit avoir un serveur écrit en Node.JS, avec express
  * Déployable avec un simple `git push` (en utilisant heroku)
  * Le projet doit être suffisamment complexe
+ 
+## Jeu 2 joueurs 1 contre 1
+@ZussyFranck
+
+* Génération d’un terrain
+* Contrôle des déplacement des deux personnages
+* Gestion des collisions avec le terrain et entre les personnages
+* Gestion des attaques des personnages
+* Possibilité de jouer en ligne un contre un pour la partie serveur
+* Ajout de bonus générés aléatoirement sur le terrain (à voir)
+
 
