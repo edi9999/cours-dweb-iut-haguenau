@@ -56,7 +56,9 @@ Il faut également avoir une vue qui permette d'afficher toutes les images class
  * Jeu contre une IA
  * Sauvegarde du log du jeu (format Pokerstars)
 
-## Clone de 2048
+## Clone de 2048 
+Florian WUST @florianwust
+Quentin HAENSLER @qhaensler
 
  * Affichage du jeu
  * Moteur du jeu
