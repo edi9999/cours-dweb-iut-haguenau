@@ -19,6 +19,7 @@ Joel Mercier (@Joel-Mercier) & François Mang (@Franz9425) :
  - Travailler sur une intégration avec d'autres outils (par exemple, avec github, pour avoir une notification quand quelqu'un fait un commit (ou une autre intégration))
 
 ## Clone de 2048
+
 Florian WUST @florianwust
 Quentin HAENSLER @qhaensler
 
@@ -29,16 +30,6 @@ Quentin HAENSLER @qhaensler
  * Sauvegarde/Chargement de partie sur un serveur
  * Sauvegarde du score / tableau highscore, partage facebook et twitter
  * Version natives iPhone et Android avec ReactNative
-
-## Email Client
-
- * API d'envoi de mail qui s'interface avec https://github.com/mscdex/node-imap
- * Affichage des mails
- * Créer un nouveau mail
- * Envoi de mail
- * Ajout de PJ avec Drag&Drop
- * Trier ses mails (avec les dossiers IMAP)
- * Recherche dans ses mails
 
 ## Conway's Game of Life
 
@@ -55,15 +46,6 @@ Quentin Kerguélen (@qkerguelen) et Hugo Beyer (@HugoBeyer67)
  * Pièces ajoutables : Block,Beehive,Loaf,Boat , Blinker, Toad, Beacon, Pulsar, Pentadecathlon, Glider, Lightweight spaceship (LWSS) (Venant du serveur également)
  * Version natives iPhone et Android avec ReactNative
 
-## Tetris
-
- * Affichage du jeu
- * Moteur du jeu
- * Interaction (avec la souris ou le clavier)
- * Score / Highscore, partage facebook et twitter
- * Niveaux de jeux
- * Version natives iPhone et Android avec ReactNative
-
 ## Memory
 
 Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
@@ -76,13 +58,6 @@ Alexis Smouts (@Pappum) et Antoine Waag (@waagou)
  * Version natives iPhone et Android avec ReactNative
  * Mode multijoueur sur deux ordinateurs avec un serveur
  * Le mode multijoueur doit pouvoir marcher avec autant de joueurs que l'on souhaite
-
-## Checklist pour proposer votre propre projet :
-
- * Doit avoir une UI HTML écrite en React conséquente. L'UI doit être dynamique
- * Doit avoir un serveur écrit en Node.JS, avec express
- * Déployable avec un simple `git push` (en utilisant heroku)
- * Le projet doit être suffisamment complexe
 
 ## Projet d'analyse de code HTML pour audits SEO
 
@@ -142,3 +117,29 @@ Il faut également avoir une vue qui permette d'afficher toutes les images class
  * Jeu multijoueur, sur plusieurs ordinateurs
  * Jeu contre une IA
  * Sauvegarde du log du jeu (format Pokerstars)
+
+## Email Client
+
+ * API d'envoi de mail qui s'interface avec https://github.com/mscdex/node-imap
+ * Affichage des mails
+ * Créer un nouveau mail
+ * Envoi de mail
+ * Ajout de PJ avec Drag&Drop
+ * Trier ses mails (avec les dossiers IMAP)
+ * Recherche dans ses mails
+
+## Tetris
+
+ * Affichage du jeu
+ * Moteur du jeu
+ * Interaction (avec la souris ou le clavier)
+ * Score / Highscore, partage facebook et twitter
+ * Niveaux de jeux
+ * Version natives iPhone et Android avec ReactNative
+
+# Checklist pour proposer votre propre projet :
+
+ * Doit avoir une UI HTML écrite en React conséquente. L'UI doit être dynamique
+ * Doit avoir un serveur écrit en Node.JS, avec express
+ * Déployable avec un simple `git push` (en utilisant heroku)
+ * Le projet doit être suffisamment complexe
