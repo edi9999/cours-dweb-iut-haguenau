@@ -1,0 +1,12 @@
+#!/bin/bash
+
+{ ./makeinterro "01" "02" "01" "02" "01" &&
+	./makeinterro "03" "04" "03" "04" "02" &&
+	./makeinterro "05" "06" "05" "06" "03" &&
+	./makeinterro "07" "08" "07" "08" "04" &&
+	./makeinterro "09" "10" "09" "03" "05" &&
+	./makeinterro "07" "03" "05" "06" "06" &&
+	./makeinterro "02" "09" "10" "04" "01" &&
+	./makeinterro "04" "05" "01" "08" "03" &&
+	./makeinterro "06" "01" "10" "07" "05" &&
+	./makeinterro "10" "08" "09" "06" "04"; } | pandoc -s > interrobig.html

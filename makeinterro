@@ -3,7 +3,6 @@
 groups=()
 groups=( "${groups[@]}" "**Nom** : __________________________________" )
 
-groups=( "${groups[@]}" "# Questions à 1 point" )
 c=0
 
 q1="$1"
@@ -14,7 +13,7 @@ q5="$5"
 
 for i in interro/easy/{$q1,$q2}.md; do
 	(( c = c+1 ))
-	groups=( "${groups[@]}" "## Question $c" )
+	groups=( "${groups[@]}" "#### Question $c (1 point)" )
 	groups=( "${groups[@]}" "$(cat "$i")" )
 	groups=( "${groups[@]}" "" )
 	groups=( "${groups[@]}" "" )
@@ -22,11 +21,9 @@ for i in interro/easy/{$q1,$q2}.md; do
 	groups=( "${groups[@]}" "" )
 done
 
-groups=( "${groups[@]}" "# Questions à 2 points" )
-
 for i in interro/medium/{$q3,$q4}.md; do
 	(( c = c+1 ))
-	groups=( "${groups[@]}" "## Question $c" )
+	groups=( "${groups[@]}" "#### Question $c (2 points)" )
 	groups=( "${groups[@]}" "$(cat "$i")" )
 	groups=( "${groups[@]}" "" )
 	groups=( "${groups[@]}" "" )
@@ -35,17 +32,18 @@ for i in interro/medium/{$q3,$q4}.md; do
 done
 
 groups=( "${groups[@]}" "<p style='page-break-before: always'></p>" )
-groups=( "${groups[@]}" "# Question à 4 points" )
 
 for i in interro/hard/$q5.md; do
 	(( c = c+1 ))
-	groups=( "${groups[@]}" "## Question $c" )
+	groups=( "${groups[@]}" "#### Question $c (4 points)" )
 	groups=( "${groups[@]}" "$(cat "$i")" )
 	groups=( "${groups[@]}" "" )
 	groups=( "${groups[@]}" "" )
 	groups=( "${groups[@]}" "" )
 	groups=( "${groups[@]}" "" )
 done
+
+groups=( "${groups[@]}" "<p style='page-break-before: always'></p>" )
 
 for el in "${groups[@]}"; do
 	echo "${el}"
