@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./makeinterro |
+	iconv -t utf-8 |
+	pandoc -s |
+	iconv -f utf-8 > interro.html
