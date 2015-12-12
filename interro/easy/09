@@ -1,1 +1,0 @@
-Est-ce une bonne pratique que de faire `this.setProps({name:'Hello'})`? Expliquez pourquoi .

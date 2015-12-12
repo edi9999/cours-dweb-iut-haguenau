@@ -1,6 +1,0 @@
-Nous connaissons `state` , `props`, `setState` , `render` , `componentDidMount`, `getInitialState` , `getDefaultProps`.
-Triez ces noms en trois catégories :
- 1. Les méthodes que l'on doit définir
- 2. Les méthodes que l'on peut appeler
- 3. Les propriétés auquelles on a accès
-
