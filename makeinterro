@@ -1,7 +1,7 @@
 #!/bin/bash
 
 groups=()
-groups=( "${groups[@]}" "# Question faciles" )
+groups=( "${groups[@]}" "# Question faciles (2 * 1 points)" )
 c=0
 
 q1="$1"
@@ -20,7 +20,7 @@ for i in interro/easy/{$q1,$q2}.md; do
 	groups=( "${groups[@]}" "" )
 done
 
-groups=( "${groups[@]}" "# Question moyennes" )
+groups=( "${groups[@]}" "# Question moyennes (2 * 2 points)" )
 
 for i in interro/medium/{$q3,$q4}.md; do
 	(( c = c+1 ))
@@ -32,7 +32,7 @@ for i in interro/medium/{$q3,$q4}.md; do
 	groups=( "${groups[@]}" "" )
 done
 
-groups=( "${groups[@]}" "# Question dure" )
+groups=( "${groups[@]}" "# Question dure (1 * 4 points)" )
 
 for i in interro/hard/$q5.md; do
 	(( c = c+1 ))
