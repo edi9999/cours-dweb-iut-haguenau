@@ -1,14 +1,16 @@
 #!/bin/bash
 
-# 2 faciles
-# 2 moyens
-# 1 difficile
-
 groups=()
 groups=( "${groups[@]}" "# Question faciles" )
 c=0
 
-for i in interro/easy/{01,02}.md; do
+q1="$1"
+q2="$2"
+q3="$3"
+q4="$4"
+q5="$5"
+
+for i in interro/easy/{$q1,$q2}.md; do
 	(( c = c+1 ))
 	groups=( "${groups[@]}" "## Question $c" )
 	groups=( "${groups[@]}" "$(cat "$i")" )
@@ -20,7 +22,7 @@ done
 
 groups=( "${groups[@]}" "# Question moyennes" )
 
-for i in interro/medium/{01,02}.md; do
+for i in interro/medium/{$q3,$q4}.md; do
 	(( c = c+1 ))
 	groups=( "${groups[@]}" "## Question $c" )
 	groups=( "${groups[@]}" "$(cat "$i")" )
@@ -32,7 +34,7 @@ done
 
 groups=( "${groups[@]}" "# Question dure" )
 
-for i in interro/hard/01.md; do
+for i in interro/hard/$q5.md; do
 	(( c = c+1 ))
 	groups=( "${groups[@]}" "## Question $c" )
 	groups=( "${groups[@]}" "$(cat "$i")" )

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+./interromd "01" "02" "01" "02" "01"
+mv interro{,01}.html
+
+./interromd "03" "04" "03" "04" "02"
+mv interro{,02}.html
+
+./interromd "05" "06" "05" "06" "03"
+mv interro{,03}.html
+
+./interromd "07" "08" "07" "08" "04"
+mv interro{,04}.html
+
+./interromd "09" "10" "09" "10" "05"
+mv interro{,05}.html
