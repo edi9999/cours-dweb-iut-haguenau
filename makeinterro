@@ -34,6 +34,7 @@ for i in interro/medium/{$q3,$q4}.md; do
 	groups=( "${groups[@]}" "" )
 done
 
+groups=( "${groups[@]}" "<p style='page-break-before: always'></p>" )
 groups=( "${groups[@]}" "# Question à 4 points" )
 
 for i in interro/hard/$q5.md; do
