@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><strong>Nom</strong> : __________________________________</p>
+<h4 id="question-1-1-point">Question 1 (1 point)</h4>
+<p>Est-ce que faire <code>this.setProps({name:'Hello'})</code> est une bonne pratique ? Expliquer pourquoi.</p>
+<h4 id="question-2-1-point">Question 2 (1 point)</h4>
+<p>Comment peut-on instancier la Classe React Timer avec une <code>prop</code> appelée <code>time</code> qui vaut l'entier 0 ?</p>
+<h4 id="question-3-2-points">Question 3 (2 points)</h4>
+<p>Nous connaissons :</p>
+<ul>
+<li><code>state</code></li>
+<li><code>props</code></li>
+<li><code>setState</code></li>
+<li><code>render</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>getInitialState</code></li>
+<li><code>getDefaultProps</code></li>
+<li><code>componentWillUnmount</code></li>
+</ul>
+<p>Trier ces noms en trois catégories :</p>
+<ol style="list-style-type: decimal">
+<li>Les méthodes que l'on peut définir</li>
+<li>Les méthodes que l'on peut appeler</li>
+<li>Les propriétés auxquelles on a accès</li>
+</ol>
+<h4 id="question-4-2-points">Question 4 (2 points)</h4>
+<p>Expliquer les méthodes suivantes que l'on applique sur un tableau et donner des exemples pour chacune des méthodes.</p>
+<ul>
+<li><code>forEach</code></li>
+<li><code>concat</code></li>
+<li><code>push</code></li>
+<li><code>map</code></li>
+</ul>
+<p style="page-break-before: always">
+</p>
+<h4 id="question-5-4-points">Question 5 (4 points)</h4>
+<p>Expliquer comment fonctionne ce composant React :</p>
+<pre><code>&lt;body&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+        var UserGist = React.createClass({
+            getInitialState: function() {
+                return {
+                    username: &#39;&#39;,
+                    lastGistUrl: &#39;&#39;
+                };
+            },
+
+            componentDidMount: function() {
+                $.get(this.props.source, function(result) {
+                    var lastGist = result[0];
+                    if (this.isMounted()) {
+                        this.setState({
+                            username: lastGist.owner.login,
+                            lastGistUrl: lastGist.html_url
+                        });
+                    }
+                }.bind(this));
+            },
+
+            render: function() {
+                return (
+                    &lt;div&gt;
+                    {this.state.username} s last gist is &lt;a href={this.state.lastGistUrl}&gt;here&lt;/a&gt;.
+                    &lt;/div&gt;
+                );
+            }
+        });
+
+        ReactDOM.render(
+            &lt;UserGist source=&quot;https://api.github.com/users/octocat/gists&quot; /&gt;,
+                document.body
+        );
+    &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+<p>Pourquoi écrit-on <code>.bind(this)</code> dans la fonction componentDidMount ?</p>
+<p>On aimerait afficher simultanément le dernier gist pour les utilisateurs <code>octocat</code> et <code>tj</code>.</p>
+<p>Est-ce possible ? Comment ?</p>
+<p style="page-break-before: always">
+</p>
+</body>
+</html>

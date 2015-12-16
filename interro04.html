@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><strong>Nom</strong> : __________________________________</p>
+<h4 id="question-1-1-point">Question 1 (1 point)</h4>
+<p>Peut-on donner une valeur par défaut au <code>state</code>? Si oui, avec quelle méthode ?</p>
+<h4 id="question-2-1-point">Question 2 (1 point)</h4>
+<p>Quelle est la méthode obligatoire de toute classe React ?</p>
+<h4 id="question-3-2-points">Question 3 (2 points)</h4>
+<p>Expliquer le fonctionnement du code suivant :</p>
+<pre><code>this.foo = 3;
+var f = function () {
+    alert(this.foo);
+}
+f.foo = 5;
+setInterval(f.bind(this), 500);</code></pre>
+<p>Quel est l'intérêt du <code>.bind</code> ?</p>
+<h4 id="question-4-2-points">Question 4 (2 points)</h4>
+<p>Expliquer le fonctionnement du code suivant :</p>
+<pre><code>var Todos = React.createClass({
+    getInitialState:function(){
+        return [{
+            checked: false,
+            text: &quot;Learn React&quot;
+        }]
+    },
+    render:function (){
+        return this.state.todos.map(function(todo) {
+            return &lt;Todo checked={todo.checked} text={todo.text}&gt;
+        });
+    }
+});</code></pre>
+<p style="page-break-before: always">
+</p>
+<h4 id="question-5-4-points">Question 5 (4 points)</h4>
+<p>Expliquer comment fonctionne ce composant React :</p>
+<pre><code>&lt;body&gt;
+  &lt;script type=&quot;text/babel&quot;&gt;
+    var Hello = React.createClass({
+      getInitialState: function () {
+        return {
+          opacity: 1.0
+        };
+      },
+
+      componentDidMount: function () {
+        this.timer = setInterval(function () {
+          var opacity = this.state.opacity;
+          opacity -= .05;
+          if (opacity &lt; 0.1) {
+            opacity = 1.0;
+          }
+          this.setState({
+            opacity: opacity
+          });
+        }.bind(this), 100);
+      },
+
+      render: function () {
+        return (
+          &lt;div style={{opacity: this.state.opacity}}&gt;
+            Hello {this.props.name}
+          &lt;/div&gt;
+        );
+      }
+    });
+
+    ReactDOM.render(
+      &lt;Hello name=&quot;world&quot;/&gt;,
+      document.body
+    );
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+<p>A quoi servent les doubles <code>{{</code> ?</p>
+<p>Comment peut-on faire pour afficher plusieurs fois ce composant avec des mots différents avec le moins de changements possibles ?</p>
+<p style="page-break-before: always">
+</p>
+</body>
+</html>

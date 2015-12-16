@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><strong>Nom</strong> : __________________________________</p>
+<h4 id="question-1-1-point">Question 1 (1 point)</h4>
+<p>Que fait <code>this.setState({name:'Hello'})</code> ?</p>
+<p>Qu'est-ce que cela va provoquer dans l'application ?</p>
+<h4 id="question-2-1-point">Question 2 (1 point)</h4>
+<p>Peut-on donner une valeur par défaut aux <code>props</code>? Si oui, avec quelle méthode ?</p>
+<h4 id="question-3-2-points">Question 3 (2 points)</h4>
+<p>Soit une classe React dont le <code>state</code> est un objet avec une clef todos qui contient un tableau de todos.</p>
+<p>La méthode <code>onAddTodo</code> prend en premier argument l'objet <code>todo</code> que l'on souhaite ajouter.</p>
+<p>Écrire la méthode <code>onAddTodo</code> de cette classe React.</p>
+<p>On suppose que l'état initial est déjà défini autre part dans ce composant.</p>
+<h4 id="question-4-2-points">Question 4 (2 points)</h4>
+<p>Lister toutes les façons de créer ou mettre à jour le <code>state</code> et expliquer quand on les utilise.</p>
+<p>Lister toutes les façons de créer ou mettre à jour les <code>props</code> et expliquer quand on les utilise.</p>
+<p>On pourra utiliser <code>ReactDOM</code>.</p>
+<p style="page-break-before: always">
+</p>
+<h4 id="question-5-4-points">Question 5 (4 points)</h4>
+<p>Cinq erreurs se sont glissées dans ce code.</p>
+<p>Les trouver, expliquer pourquoi ce sont des erreurs et les corriger.</p>
+<pre><code>&lt;body&gt;
+  &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/babel&quot;&gt;
+      var LikeButton = React.createClass({
+        getDefaultState: function() {
+          var liked;
+          if(this.props.hasOwnProperty(&quot;liked&quot;))
+            liked = this.props.liked
+          else
+            liked= true
+          return {liked: liked};
+        },
+        handleClick: function(event) {
+          this.setState({this.state.liked: !this.state.liked});
+        },
+        render: function() {
+          var text = this.state.liked ? &#39;like&#39; : &#39;haven\&#39;t liked&#39;;
+          return (
+            &lt;p onClick=&quot;this.handleClick&quot;&gt;
+              You {text} {this.text}. Click to toggle.
+            &lt;/p&gt;
+          );
+        }
+      });
+
+      ReactDOM.render(
+        &lt;LikeButton text=&quot;Poker&quot; liked={true}/&gt;
+        &lt;LikeButton text=&quot;Craps&quot; liked={false}/&gt;
+        &lt;LikeButton text=&quot;Craps&quot;/&gt;
+        ,
+        document.getElementById(&#39;example&#39;)
+      );
+  &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+<p style="page-break-before: always">
+</p>
+</body>
+</html>

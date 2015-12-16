@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><strong>Nom</strong> : __________________________________</p>
+<h4 id="question-1-1-point">Question 1 (1 point)</h4>
+<p>Comment nomme-t-on le type de données <code>&lt;Timer time={1}/&gt;</code> ?</p>
+<p>Expliquer ce que ce code effectue si on l'écrit dans un ReactDOM.render</p>
+<h4 id="question-2-1-point">Question 2 (1 point)</h4>
+<p>Quelles sont les caractéristiques du <code>state</code> ?</p>
+<h4 id="question-3-2-points">Question 3 (2 points)</h4>
+<p>Expliquer le fonctionnement du code suivant :</p>
+<pre><code>var LikeButton = React.createClass({
+  handleClick: function(event) {
+    this.setState({liked: !this.state.liked});
+  },
+  render: function() {
+    var text = this.state.liked ? &#39;like&#39; : &#39;haven\&#39;t liked&#39;;
+    return (
+      &lt;p onClick={this.handleClick}&gt;
+        You {text} {this.props.text}. Click to toggle.
+      &lt;/p&gt;
+    );
+  }
+});</code></pre>
+<h4 id="question-4-2-points">Question 4 (2 points)</h4>
+<p>Soit une classe React dont le <code>state</code> est un objet avec une clef todos qui contient un tableau de todos.</p>
+<p>La méthode <code>onAddTodo</code> prend en premier argument l'objet <code>todo</code> que l'on souhaite ajouter.</p>
+<p>Écrire la méthode <code>onAddTodo</code> de cette classe React.</p>
+<p>On suppose que l'état initial est déjà défini autre part dans ce composant.</p>
+<p style="page-break-before: always">
+</p>
+<h4 id="question-5-4-points">Question 5 (4 points)</h4>
+<p>Expliquer comment fonctionne ce composant React :</p>
+<pre><code>&lt;body&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+        var RepoList = React.createClass({
+            getInitialState: function() {
+                return {
+                    loading: true,
+                    error: null,
+                    data: null
+                };
+            },
+
+            componentDidMount() {
+                this.props.promise.then(
+                    value =&gt; this.setState({loading: false, data: value}),
+                    error =&gt; this.setState({loading: false, error: error})
+                );
+            },
+
+            render: function() {
+                if (this.state.loading) {
+                    return &lt;span&gt;Loading...&lt;/span&gt;;
+                }
+                else if (this.state.error !== null) {
+                    return &lt;span&gt;Error: {this.state.error.message}&lt;/span&gt;;
+                }
+                else {
+                    var repos = this.state.data.items;
+                    var repoList = repos.map(function (repo) {
+                        return (
+                            &lt;li&gt;
+                                &lt;a href={repo.html_url}&gt;
+                                {repo.name}
+                                &lt;/a&gt;
+                                ({repo.stargazers_count} stars)
+                                &lt;br/&gt;
+                            {repo.description}
+                            &lt;/li&gt;
+                        );
+                    });
+                    return (
+                        &lt;main&gt;
+                        &lt;h1&gt;Most Popular JavaScript Projects in Github&lt;/h1&gt;
+                        &lt;ol&gt;{repoList}&lt;/ol&gt;
+                        &lt;/main&gt;
+                    );
+                }
+            }
+        });
+
+        ReactDOM.render(
+            &lt;RepoList promise={$.getJSON(&#39;https://api.github.com/search/repositories?q=javascript&amp;sort=stars&#39;)} /&gt;,
+                document.body
+        );
+    &lt;/script&gt;
+&lt;/body&gt;</code></pre>
+<p>Quel type d'objet renvoie la fonction <code>$.getJSON</code> ?</p>
+<p>Quelles sont les caractéristiques de cet objet et comment s'en sert-on ?</p>
+<p style="page-break-before: always">
+</p>
+</body>
+</html>
