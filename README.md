@@ -64,18 +64,12 @@ et tapez :
  3. [Bases de ReactJS](lessons/03-bases-react.md)
  4. [Projets React + express](lessons/projets-react.md)
 
-React JS : Séance du 13 Novembre :
 
-React Together : https://github.com/edi9999/react-together
-Fork des démos faites : https://github.com/edi9999/react-demos
+## Découverte JS :
 
- 6. ReactJS + Ajax
- 7. ReactJS + ES6
- 8. React.js https://github.com/tako-black/learnyoureact
- 9. Tests unitaires https://github.com/finnp/test-anything
- 10. Création d'une webapp (Stockage de données)
- 11. Création d'une webapp
- 12. Création d'une webapp
- 13. Création d'une webapp
- 14. Création d'une webapp
- 15. Création d'une webapp
+ * [d3.js](http://d3js.org/), data driven document, interfaces graphiques
+ * Comparatif des différents framework JS : Angular/Backbone/React/Ember
+ * Bases de données : MongoDB / PostGres
+ * Architecture React : Flux / Redux
+ * ES6, nouveau standard.
+ * React-Native, utiliser React sur mobile pour faire des applications natives
