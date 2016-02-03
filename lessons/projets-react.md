@@ -37,6 +37,7 @@ Quentin HAENSLER @qhaensler
 
 Quentin Kerguélen (@qkerguelen) et Hugo Beyer (@HugoBeyer67)
 
+http://hugobeyer.fr/life/
 <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Lien explication game of life</a>
 
  * Affichage du jeu
