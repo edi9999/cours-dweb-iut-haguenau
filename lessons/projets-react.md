@@ -30,6 +30,8 @@ Quentin HAENSLER @qhaensler
  * Sauvegarde/Chargement de partie sur un serveur
  * Sauvegarde du score / tableau highscore, partage facebook et twitter
  * Version natives iPhone et Android avec ReactNative
+ 
+[Demo du jeu](http://react2048.herokuapp.com/)
 
 ## Conway's Game of Life
 
